@@ -22,7 +22,8 @@
     background-color: green;
     color: white;
     padding: 10px;
-    border: 0
+    border: 0;
+    cursor: pointer;
 }
 
 input {
@@ -73,4 +74,7 @@ header {
     padding: 1%;
     background-color:#186CA3;
     color: white;
+}
+li:hover{
+    cursor:pointer;
 }

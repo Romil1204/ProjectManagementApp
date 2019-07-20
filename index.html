@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Home page</title>
-    <link rel="stylesheet" type="text/css" href="./pma.css" />
+    <link rel="stylesheet" type="text/css"  href="./pma.css" />
 </head>
 <body>
     <header> 
@@ -10,45 +10,22 @@
         Project Management App
     </header>
     <div class="container">
-        <div class="menu-block" >Menu
-            <ul id="menuList"></ul>
+        <div class="menu-block">
+            <ul id="menuList">
+
+            </ul>
         </div>
         <div class="board-container">
             <div class="add-board-block">
-                <input type="text" value="" placeholder="eg., New board name" style="width: 80%;">
-                <button id="add-board-btn" onclick="addBoardAPI(newBoardText)">Add Board</button>
+                <input type="text" id = "newBoardText" value="" placeholder="eg., New board name" style="width: 80%;">
+                <button id="add-board-btn" onclick="addBoard(newBoardText)">Add Board</button>
             </div>
-            <section>
-                <div>Board Name</div>
-                <div class="project-block">
-                    <div class="project-card">
-                        Project One
-                        <ul>
-                            <li>Task One</li>
-                            <li>Task Two</li>
-                        </ul>
-                    </div>
-                <div class="project-card">
-                        Project Two
-                        <ul>
-                            <li>Task One</li>
-                            <li>Task Two</li>
-                        </ul>
-                    </div>
-                    <div class="project-card">
-                            Project Two
-                            <ul>
-                                <li>Task One</li>
-                                <li>Task Two</li>
-                            </ul>
-                        </div>
-                    <div class="project-card">
-                            Project Two
-                            <ul>
-                                <li>Task One</li>
-                                <li>Task Two</li>
-                            </ul>
-                        </div>
+            <div id = "boardBlockList"></div>
+            
+            <section class ="board-block">
+                <div>Board Name <button onclick="removeCard()" style="background: red;cursor: pointer;">Remove Card</button></div>
+                <div class="project-block" id = "projectList">
+                    
                 </div>
             </section>
         </div>
